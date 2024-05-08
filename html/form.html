@@ -13,18 +13,36 @@
     <form action="supreme">
         <p>
         <label for="password">Enter a password :</label>
-        <input id="password" type="password" placeholder="password">
+        <input id="password" type="password" placeholder="password" name="password">
         </p>
         <p>
         <label for="username">Enter a username :</label>
-        <input id="username" type="text" placeholder="username">
+        <input id="username" type="text" placeholder="username" name="username">
         </p>
-        <input type="color">
+        <input type="color" name="color"> 
         <p>
         <label for="time">Enter Date and Time:</label>
-        <input id="time" type="time">
+        <input id="time" type="time" name="time">
     </p>
     <button>Submit</button>
+    <input type="submit" value="Click Me">
+    </form>
+    <hr>
+    <button>Not inside form</button>
+    <h2>Hijacking Search</h2>
+    <Search 
+    <form action="https://www.reddit.com/search/?q=dog">
+        <input type="text" name="q">
+        <!-- when we search in reddit it shows?q=dog BUT because we added
+        name= query in input it does not acutally able to search dog in our form 
+    So to be able to search we need to add exact name  when we search at actual website-->
+        <button>search reddit</button>
+        <!-- https://www.reddit.com/search/?q=dog (this shows actually when we search in reddit)-->
+        <!-- https://www.reddit.com/search/?query=dog (this shows when we search dog in form) -->
+    </form>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
     </form>
 
 </body>
