@@ -42,8 +42,62 @@
     <form action="https://www.google.com/search">
         <input type="text" name="q">
         <button>Search Google</button>
+        <p>
+        <fieldset>
+            <legend>Choose your monster's features:</legend>
+          
+            <div>
+              <input type="checkbox" id="scales" name="scales" checked >
+              <!-- here checked in input makes Scale value already checked
+            at the start of the program -->
+              <label for="scales">Scales</label>
+            </div>
+          
+            <div>
+              <input type="checkbox" id="horns" name="horns">
+              <label for="horns">Horns</label>
+            </div>
+          </fieldset>
+        </p>
+          <!-- The <fieldset> tag is used to group related elements in a form.
+           The <fieldset> tag draws a box around the related elements. -->
     </form>
+
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+    <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">I agree to everything</label>
+        <button>submit</button>
+    <!-- Radio Button is a bit different to checkboxes as in the
+    group of radioboxes we can only select one box -->
+    <div>
+        <p>
+        <label for="huey">Huey</label>
+        <input type="radio" id="huey" name="drone" value="huey" checked />
+        <label for="dewey">Dewey</label>
+        <input type="radio" id="dewey" name="drone" value="dewey" />
+        <!-- We can write label and input in any order . 
+        I usually Prefer Input first and then Label -->
+        <label for="louie">Louie</label>
+        <input type="radio" id="louie" name="drone" value="louie" />
+        </p>
+        <p>
+            <label for="meal">Please Select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="">--Please choose an option--</option>
+                <option value="fish">Fish</option>
+                <option value="veg">Veg</option>
+                <option value="chicken">Chicken</option>
+                <!-- Here Selected is used which is same as Checked in checkboxes -->
+            </select>
+        </p>
+        <button>Submit</button>
+    </div>
+    </form>
+    
+    
+    
 
 </body>
 
-</html>
+</html> 
