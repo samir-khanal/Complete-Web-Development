@@ -91,12 +91,42 @@
                 <!-- Here Selected is used which is same as Checked in checkboxes -->
             </select>
         </p>
-        <button>Submit</button>
     </div>
+
+        <p>
+            <label for="cheese">Amount of cheese:</label>
+            <input type="range" id="cheese" min="1" max="10" step="2" name="cheese level">  
+        </p>
+   
+        <p>
+            <label for="request">Any special request?</label>
+            <br>
+            <textarea id="request" rows="7" cols="20" name="request" placeholder="type here!"></textarea>
+        </p>
+        <!-- <textarea> is a multiline text input mostly used
+        as comment and feedback form -->
+        <button>Submit</button>
+    
     </form>
-    
-    
-    
+    <h2>Validations demo</h2>
+    <form action="dummy">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" minlength="5" maxlength="12" required>
+        <!-- Here minlength and max length in username is used 
+        as how many letters we can write before submitting 
+     Whereas min and max is used for input type such as
+     date, time, number, range etc-->
+    </p>
+    <p>
+        <!-- <input type="email" required> -->
+        <input type="url">
+    </p>
+        <button>Submit</button>
+    </form>
+    <!-- pattern attribute specifies a regular expression  -->
 
 </body>
 
