@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    font-weight: normal;
+    /* or we can write 400 instead of normal */
+    /* text-decoration: overline; */
+    text-decoration: blue underline wavy;
+    letter-spacing: 8px;
+
+}
+p{
+    /* font-weight: bold; */
+    line-height: 2;
+}
+a{
+    text-decoration: none;
+    /* this removes the underline in anchor tag */
+}
+/* IN CSS the various units used are numbers(1,2.5 , ...), in em(1em,2em...)
+in percentage(10%,120% ...) and in pixels(2px,10px...) */
+
+/* Relative Units      
+-em
+-rem
+-vh
+-vw
+-% */
+/* Absolute unit
+-px
+-pt
+-cm
+-in
+-mm */
